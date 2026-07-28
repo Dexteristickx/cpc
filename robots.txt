@@ -1,0 +1,9 @@
+# Chosen People's Church — robots.txt (redesign package)
+# NOTE: intentionally does NOT list admin/setup/endpoint files.
+# (The old robots.txt advertised /admin/, setup-telegram.php etc. — a security
+#  information leak. Sensitive files are protected server-side instead; see README §6.)
+
+User-agent: *
+Allow: /
+
+Sitemap: https://www.chosenpeopleschurch.com/sitemap.xml

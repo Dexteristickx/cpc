@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Events & Gatherings | Chosen People's Church, Ibadan</title>
+<meta name="description" content="Join us — Sundays 8:30 AM, Monday Prayer Tower 5:00 PM, Wednesday Bible Study 5:00 PM — plus special programs at Chosen People's Church, Challenge, Ibadan.">
+<link rel="canonical" href="https://www.chosenpeopleschurch.com/events">
+<meta property="og:title" content="Events & Gatherings | Chosen People's Church">
+<meta property="og:description" content="Sundays 8:30 AM · Prayer Tower Mondays 5 PM · Bible Study Wednesdays 5 PM — Challenge, Ibadan.">
+<meta property="og:type" content="website">
+<link rel="icon" type="image/webp" href="assets/logo.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Church","name":"Chosen People's Church","url":"https://www.chosenpeopleschurch.com/","address":{"@type":"PostalAddress","streetAddress":"19 Tomori Avenue, Elewura Street, Challenge","addressLocality":"Ibadan","addressCountry":"NG"}}
+</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-J151XXVG7D"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-J151XXVG7D');</script>
+</head>
+<body>
+
+<div class="abar" id="announcement-bar" style="display:none">
+  <div class="wrap">
+    <span>📣</span>
+    <span data-ab-text>Next gathering</span>
+    <a href="#upcoming">Details below ↓</a>
+    <button class="close" id="abar-close" aria-label="Dismiss announcement">×</button>
+  </div>
+</div>
+
+<header>
+  <div class="wrap nav">
+    <a href="index.html" class="brand">
+      <img src="assets/logo.webp" alt="Chosen People's Church logo">
+      <span class="t"><b>Chosen People's Church</b><small>Centre for Reconciliation &amp; Restoration</small></span>
+    </a>
+    <nav class="menu" id="menu" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="sermons.html">Sermons</a>
+      <a href="events.html" class="active" aria-current="page">Events</a>
+      <a href="giving.html">Giving</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="https://portal.chosenpeopleschurch.com" target="_blank" rel="noopener">Member Portal</a>
+    </nav>
+    <a href="giving.html" class="btn btn-green">Give Online</a>
+    <button class="burger" id="burger" aria-label="Menu" aria-expanded="false">☰</button>
+  </div>
+</header>
+
+<main>
+<div class="page-hero">
+  <div class="wrap">
+    <div class="crumbs"><a href="index.html">Home</a> › Events</div>
+    <h1>Gatherings &amp; <em>Events</em></h1>
+    <p>There is always a place for you here — from our weekly services to special programs, outreaches, and conferences.</p>
+    <div class="timer" style="margin-top:1.6rem">
+      <div class="box"><span class="num" id="days">00</span><span class="lbl">Days</span></div>
+      <div class="box"><span class="num" id="hours">00</span><span class="lbl">Hours</span></div>
+      <div class="box"><span class="num" id="minutes">00</span><span class="lbl">Mins</span></div>
+      <div class="box"><span class="num" id="seconds">00</span><span class="lbl">Secs</span></div>
+    </div>
+    <p style="font-size:.82rem;margin-top:.6rem;color:#CFC8EE">…until our next Sunday Celebration Service</p>
+  </div>
+</div>
+
+<div class="wrap">
+  <!-- WEEKLY RHYTHM -->
+  <section class="center">
+    <span class="k">Every Week</span>
+    <h2 class="sec-title">Our Weekly Rhythm</h2>
+    <p class="sec-sub">Three standing appointments with God — same time, same place, every week.</p>
+    <div class="weekly" style="text-align:left">
+      <div class="wcell reveal">
+        <div class="n">🌅 8:30 AM</div>
+        <b>Sunday Celebration Service</b>
+        <span>Our main gathering of the week — heartfelt worship, the undiluted Word, and warm fellowship. Sundays.</span>
+      </div>
+      <div class="wcell reveal">
+        <div class="n">🙏 5:00 PM</div>
+        <b>Prayer Tower</b>
+        <span>An evening of intercession and travailing prayer for our families, the city, and the nations. Mondays.</span>
+      </div>
+      <div class="wcell reveal">
+        <div class="n">📖 5:00 PM</div>
+        <b>Bible Study</b>
+        <span>Interactive teaching sessions where we dig deep into Scripture and grow together. Wednesdays.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- UPCOMING — data-driven from /api/events (past events are never shown; fixes audit issue #3) -->
+  <section class="center" id="upcoming" style="padding-top:1rem">
+    <span class="k">What's Coming</span>
+    <h2 class="sec-title">Special Programs</h2>
+    <p class="sec-sub">Conferences, outreaches, and one-off gatherings — updated automatically, and past events disappear by themselves.</p>
+    <div id="events-list" style="text-align:left">
+      <div class="live-note"><b>Loading upcoming events…</b></div>
+    </div>
+    <div class="empty-state" id="events-empty" style="display:none">
+      <b>No special programs scheduled right now</b>
+      Our weekly services above continue as always — check back soon! 💜
+    </div>
+  </section>
+
+  <!-- SMALL GROUPS -->
+  <section style="padding-top:0">
+    <div class="cta">
+      <h2>Grow in a Small Group</h2>
+      <p>Home cell fellowships meet across Ibadan during the week. Find one near you and do life with family.</p>
+      <div class="hero-cta">
+        <a href="https://portal.chosenpeopleschurch.com/register" target="_blank" rel="noopener" class="btn btn-gold">Register &amp; Join a Group</a>
+        <a href="https://wa.me/2348155969877" target="_blank" rel="noopener" class="btn btn-ghost" style="background:transparent;color:#fff;border-color:rgba(255,255,255,.5)">Ask on WhatsApp</a>
+      </div>
+    </div>
+  </section>
+</div>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <div>
+      <div class="flogo"><img src="assets/logo.webp" alt="CPC logo"><b>Chosen People's Church</b></div>
+      <p>A Spirit-filled covenant community raised for reconciliation, restoration, and the advancement of God's Kingdom.</p>
+      <div class="social">
+        <a href="https://www.youtube.com/channel/UCHYZhmE0SYucxRaYa7GJmdg" target="_blank" rel="noopener" aria-label="YouTube">
+          <svg viewBox="0 0 24 24"><path d="M23 7.2s-.2-1.6-.9-2.3c-.9-.9-1.9-.9-2.3-1C16.6 3.5 12 3.5 12 3.5s-4.6 0-7.8.4c-.4.1-1.4.1-2.3 1-.7.7-.9 2.3-.9 2.3S.8 9.1.8 11v1.8c0 1.9.2 3.8.2 3.8s.2 1.6.9 2.3c.9.9 2 .9 2.5 1 1.8.2 7.6.4 7.6.4s4.6 0 7.8-.4c.4-.1 1.4-.1 2.3-1 .7-.7.9-2.3.9-2.3s.2-1.9.2-3.8V11c0-1.9-.2-3.8-.2-3.8zM9.7 14.9V8.7l6.1 3.1-6.1 3.1z"/></svg></a>
+        <a href="https://t.me/chosenpeopleschurchglobal" target="_blank" rel="noopener" aria-label="Telegram">
+          <svg viewBox="0 0 24 24"><path d="M21.9 4.6 19 19.3c-.2 1-.8 1.2-1.6.8l-4.5-3.3-2.2 2.1c-.2.2-.4.4-.9.4l.3-4.6L18.6 7c.4-.3-.1-.5-.6-.2L7.8 13.2l-4.4-1.4c-1-.3-1-1 .2-1.4l17.2-6.6c.8-.3 1.5.2 1.1 1.8z"/></svg></a>
+        <a href="https://wa.me/2348155969877" target="_blank" rel="noopener" aria-label="WhatsApp">
+          <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.5 15.3L2 22l4.9-1.4A10 10 0 1 0 12 2zm5.3 13.9c-.2.6-1.2 1.1-1.7 1.2-.4 0-.9.3-3.1-.7-2.6-1-4.3-3.7-4.4-3.9-.1-.2-1.1-1.4-1.1-2.7s.7-1.9 1-2.2c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.4l.9 2.1c.1.2.1.4 0 .6l-.4.6-.5.5c-.1.2-.3.3-.1.6.2.3.8 1.4 1.8 2.2 1.2 1.1 2.3 1.4 2.6 1.6.3.1.5.1.7-.1l1-1.1c.2-.3.4-.2.7-.1l2 .9c.3.2.5.3.6.4 0 .1 0 .6-.3 1z"/></svg></a>
+      </div>
+    </div>
+    <div>
+      <h4>Quick Links</h4>
+      <a href="index.html">Home</a>
+      <a href="sermons.html">Sermons</a>
+      <a href="events.html">Upcoming Events</a>
+      <a href="giving.html">Online Giving</a>
+      <a href="gallery.html">Photo Gallery</a>
+    </div>
+    <div>
+      <h4>Service Times</h4>
+      <p>Sunday Service — 8:30 AM</p>
+      <p>Monday Prayer Tower — 5:00 PM</p>
+      <p>Bible Study — Wednesday 5:00 PM</p>
+    </div>
+    <div>
+      <h4>Contact Us</h4>
+      <p>19 Tomori Avenue, Elewura Street, Challenge, Ibadan, Nigeria</p>
+      <a href="tel:+2348155969877">0815 596 9877</a>
+      <a href="tel:+2348131191313">0813 119 1313</a>
+      <a href="mailto:info@chosenpeopleschurch.com">info@chosenpeopleschurch.com</a>
+    </div>
+  </div>
+  <div class="copy">© 2026 Chosen People's Church. All rights reserved.</div>
+</footer>
+
+<a class="wafloat" href="https://wa.me/2348155969877" target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.5 15.3L2 22l4.9-1.4A10 10 0 1 0 12 2zm5.3 13.9c-.2.6-1.2 1.1-1.7 1.2-.4 0-.9.3-3.1-.7-2.6-1-4.3-3.7-4.4-3.9-.1-.2-1.1-1.4-1.1-2.7s.7-1.9 1-2.2c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.4l.9 2.1c.1.2.1.4 0 .6l-.4.6-.5.5c-.1.2-.3.3-.1.6.2.3.8 1.4 1.8 2.2 1.2 1.1 2.3 1.4 2.6 1.6.3.1.5.1.7-.1l1-1.1c.2-.3.4-.2.7-.1l2 .9c.3.2.5.3.6.4 0 .1 0 .6-.3 1z"/></svg>
+</a>
+<button class="totop" id="toTop" aria-label="Back to top">↑</button>
+
+<script src="assets/main.js" defer></script>
+</body>
+</html>

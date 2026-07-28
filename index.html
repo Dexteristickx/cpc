@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chosen People's Church | Home — Centre for Reconciliation & Restoration, Ibadan</title>
+<meta name="description" content="Welcome to Chosen People's Church - Centre for Reconciliation & Restoration. Join us for Sunday worship 8:30 AM in Challenge, Ibadan, explore our ministries, and stay connected.">
+<link rel="canonical" href="https://www.chosenpeopleschurch.com/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Chosen People's Church">
+<meta property="og:title" content="Chosen People's Church | Home">
+<meta property="og:description" content="A vibrant, Spirit-filled family chosen to worship, reconcile, and restore. Sundays 8:30 AM, Challenge, Ibadan.">
+<meta property="og:url" content="https://www.chosenpeopleschurch.com/">
+<meta property="og:image" content="https://www.chosenpeopleschurch.com/assets/logo.webp">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#4A30B8">
+<link rel="icon" type="image/webp" href="assets/logo.webp">
+<link rel="apple-touch-icon" href="assets/logo.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+<!-- Church structured data (preserved from live site) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Church",
+  "name": "Chosen People's Church",
+  "url": "https://www.chosenpeopleschurch.com/",
+  "logo": "https://www.chosenpeopleschurch.com/assets/logo.webp",
+  "description": "Welcome to Chosen People's Church - Centre for Reconciliation & Restoration.",
+  "sameAs": [
+    "https://t.me/chosenpeopleschurchglobal",
+    "https://www.youtube.com/channel/UCHYZhmE0SYucxRaYa7GJmdg"
+  ],
+  "address": {"@type":"PostalAddress","streetAddress":"19 Tomori Avenue, Elewura Street, Challenge","addressLocality":"Ibadan","addressCountry":"NG"},
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "email": "info@chosenpeopleschurch.com",
+    "contactType": "customer service"
+  }
+}
+</script>
+<!-- Google Analytics (preserved — same measurement ID as the live site) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-J151XXVG7D"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-J151XXVG7D');
+</script>
+</head>
+<body>
+
+<!-- Announcement bar: DATA-DRIVEN (shows the next future event from /api/events; auto-hides when none) -->
+<div class="abar" id="announcement-bar" style="display:none">
+  <div class="wrap">
+    <span>📣</span>
+    <span data-ab-text>Next gathering</span>
+    <a href="events.html">See all events →</a>
+    <button class="close" id="abar-close" aria-label="Dismiss announcement">×</button>
+  </div>
+</div>
+
+<header>
+  <div class="wrap nav">
+    <a href="index.html" class="brand">
+      <img src="assets/logo.webp" alt="Chosen People's Church logo">
+      <span class="t"><b>Chosen People's Church</b><small>Centre for Reconciliation &amp; Restoration</small></span>
+    </a>
+    <nav class="menu" id="menu" aria-label="Main navigation">
+      <a href="index.html" class="active" aria-current="page">Home</a>
+      <a href="sermons.html">Sermons</a>
+      <a href="events.html">Events</a>
+      <a href="giving.html">Giving</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="https://portal.chosenpeopleschurch.com" target="_blank" rel="noopener">Member Portal</a>
+    </nav>
+    <a href="giving.html" class="btn btn-green">Give Online</a>
+    <button class="burger" id="burger" aria-label="Menu" aria-expanded="false">☰</button>
+  </div>
+</header>
+
+<main>
+<!-- HERO -->
+<div class="hero">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Welcome to CPC</span>
+      <h1>A Centre for <em>Reconciliation</em> &amp; <em>Restoration</em></h1>
+      <p class="lede">We are a vibrant, Spirit-filled family chosen to worship, reconcile, and restore — sharing Christ's love boldly with our community and the world.</p>
+      <div class="hero-cta">
+        <a href="#services" class="btn btn-gold">Service Times</a>
+        <a href="sermons.html" class="btn btn-ghost" style="background:transparent;color:#fff;border-color:rgba(255,255,255,.5)">Watch Sermons</a>
+      </div>
+    </div>
+    <div class="panel" id="services">
+      <h3><span class="dotg"></span> Weekly Gatherings</h3>
+      <div class="row"><span><span class="dotg"></span>Sunday Service</span><b>8:30 AM</b></div>
+      <div class="row"><span><span class="dotv"></span>Monday Prayer Tower</span><b>5:00 PM</b></div>
+      <div class="row"><span><span class="dotb"></span>Wednesday Bible Study</span><b>5:00 PM</b></div>
+    </div>
+  </div>
+</div>
+
+<!-- COUNTDOWN -->
+<div class="cband">
+  <div class="wrap">
+    <div>
+      <h3>Sunday Worship Gathering</h3>
+      <p>Join us in-person or streaming online every Sunday</p>
+    </div>
+    <div class="timer" role="timer" aria-label="Countdown to next Sunday service">
+      <div class="box"><span class="num" id="days">00</span><span class="lbl">Days</span></div>
+      <div class="box"><span class="num" id="hours">00</span><span class="lbl">Hours</span></div>
+      <div class="box"><span class="num" id="minutes">00</span><span class="lbl">Mins</span></div>
+      <div class="box"><span class="num" id="seconds">00</span><span class="lbl">Secs</span></div>
+    </div>
+    <a href="giving.html" class="btn btn-green">Give Online</a>
+  </div>
+</div>
+
+<div class="wrap">
+  <!-- VISION -->
+  <section class="center">
+    <span class="k">Our Vision &amp; Mandate</span>
+    <h2 class="sec-title">Chosen People's Church Vision</h2>
+    <p class="verse">"To heal the brokenhearted, the rejected and abandoned through the instrumentality of the word and sincere Love of GOD"<small>— The Mandate</small></p>
+    <div class="cards" style="text-align:left">
+      <div class="card reveal">
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M12 21s-8-4.7-10.3-9.2C.2 8.6 2.4 5 5.8 5c2 0 3.6 1.1 4.4 2.6L12 10l1.8-2.4C14.6 6.1 16.2 5 18.2 5c3.4 0 5.6 3.6 4.1 6.8C20 16.3 12 21 12 21Z"/></svg></div>
+        <h3>Healing &amp; Restoration</h3>
+        <p>We are called to minister healing and hope to the brokenhearted, bringing restoration to the rejected and abandoned in our community and beyond.</p>
+      </div>
+      <div class="card reveal">
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M2 5.5A2.5 2.5 0 0 1 4.5 3H11v17H4.5A2.5 2.5 0 0 0 2 17.5v-12Z"/><path d="M22 5.5A2.5 2.5 0 0 0 19.5 3H13v17h6.5a2.5 2.5 0 0 1 2.5 2.5"/></svg></div>
+        <h3>Instrumentality of the Word</h3>
+        <p>Rooted in the truth, we teach and preach the Word of God as the primary instrument for transforming lives, renewing minds, and building strong foundations.</p>
+      </div>
+      <div class="card reveal">
+        <div class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg></div>
+        <h3>Sincere Love of God</h3>
+        <p>We express the sincere love of God, creating an authentic, welcoming family where everyone is embraced, valued, and nurtured in Christ's love.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PASTORS -->
+  <section class="center" style="padding-top:1rem">
+    <span class="k">Our Leadership</span>
+    <h2 class="sec-title">Meet Our Pastors</h2>
+    <p class="sec-sub">Anointed men and women of God, committed to shepherding and equipping this covenant community for the work of ministry.</p>
+    <div class="pastors" style="text-align:left">
+      <div class="pastor lead reveal">
+        <img src="assets/pastor-1.webp" alt="Pastor Seun Olufolaju, Lead Pastor" width="731" height="1024" loading="lazy">
+        <div class="pb"><b>Pastor Seun Olufolaju</b><span class="role">Lead Pastor</span>
+          <p>Passionate about seeing lives transformed by the power of the Gospel. Leads CPC with a vision for reconciliation, discipleship, and community renewal.</p></div>
+      </div>
+      <div class="pastor reveal">
+        <img src="assets/pastor-2.webp" alt="Pastor Mrs Ifetemi Olufolaju" width="731" height="1024" loading="lazy">
+        <div class="pb"><b>Pastor Mrs Ifetemi Olufolaju</b><span class="role">Pastor</span>
+          <p>Dedicated to family counseling, women's ministry, and raising strong, godly families that serve as pillars of light in our community.</p></div>
+      </div>
+      <div class="pastor reveal">
+        <img src="assets/pastor-3.webp" alt="Pastor Lanre David" width="731" height="1024" loading="lazy">
+        <div class="pb"><b>Pastor Lanre David</b><span class="role">Pastor</span>
+          <p>Committed to teaching the Word, discipleship, and helping believers discover and grow in their unique spiritual callings.</p></div>
+      </div>
+      <div class="pastor reveal">
+        <img src="assets/pastor-4.webp" alt="Pastor Seun Abayomi" width="731" height="1024" loading="lazy">
+        <div class="pb"><b>Pastor Seun Abayomi</b><span class="role">Pastor</span>
+          <p>Raising a generation of empowered believers who carry the fire of God and walk in active faith in every sphere of influence.</p></div>
+      </div>
+      <div class="pastor reveal">
+        <img src="assets/pastor-5.webp" alt="Pastor Dunsin Olufolaju" width="731" height="1024" loading="lazy">
+        <div class="pb"><b>Pastor Dunsin Olufolaju</b><span class="role">Pastor</span>
+          <p>Anchoring the church in a culture of prayer, leading intercession and equipping the body of Christ to walk in authority.</p></div>
+      </div>
+      <div class="pastor reveal">
+        <img src="assets/pastor-6.webp" alt="Pastor Samuel Miller" width="731" height="1024" loading="lazy">
+        <div class="pb"><b>Pastor Samuel Miller</b><span class="role">Pastor</span>
+          <p>Devoted to spreading the Gospel and nurturing spiritual growth, bringing the transforming love of Christ to every heart and home.</p></div>
+      </div>
+      <div class="pastor reveal">
+        <img src="assets/pastor-7.webp" alt="Pastor Michael Oyelami" width="731" height="1024" loading="lazy">
+        <div class="pb"><b>Pastor Michael Oyelami</b><span class="role">Pastor</span>
+          <p>Passionate about intercession and discipleship, stewarding an atmosphere of worship and equipping believers to stand firm in faith.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CBN -->
+  <section style="padding-top:1rem">
+    <div class="cbn reveal">
+      <img src="assets/cbn-logo.webp" alt="Cornerstone Builders Network logo" loading="lazy">
+      <div>
+        <span class="k">Leadership School</span>
+        <h3>Cornerstone Builders Network (CBN)</h3>
+        <p>A leadership and ministry training school established by our Lead Pastor to raise biblically grounded, spiritually mature, and purpose-driven leaders for the Church and society.</p>
+        <!-- Tracking junk (?fbclid=...) stripped from the original link -->
+        <a class="btn btn-violet" href="https://cbn.subscribepage.io/#Highlight-2" target="_blank" rel="noopener">Learn More &amp; Enroll</a>
+        <p class="verse" style="font-size:1.02rem;text-align:left;margin-top:1.4rem">"For we are God's handiwork, created in Christ Jesus to do good works, which God prepared in advance for us to do."<small>Ephesians 2:10 (NIV)</small></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- LATEST MESSAGES — fed by /api/youtube (same Google Console integration as the live site) -->
+  <section class="center" style="padding-top:1rem">
+    <span class="k">Latest Messages</span>
+    <h2 class="sec-title">Recent Sermons</h2>
+    <p class="sec-sub">Catch up on our current series and latest teachings from our YouTube channel.</p>
+    <div class="vgrid" id="home-videos" style="text-align:left">
+      <div class="live-note"><b>Loading latest messages…</b></div>
+    </div>
+    <p style="margin-top:1.8rem"><a href="sermons.html" class="btn btn-violet">Watch All Sermons</a></p>
+  </section>
+
+  <!-- NEW HERE -->
+  <section style="padding-top:0">
+    <div class="cta">
+      <h2>New Here? We'd Love to Meet You</h2>
+      <p>Whether you're exploring faith for the first time or looking for a church family — you are welcome here. Come as you are.</p>
+      <div class="hero-cta">
+        <a href="#visit" class="btn btn-gold">Plan Your Visit</a>
+        <a href="https://portal.chosenpeopleschurch.com/register" target="_blank" rel="noopener" class="btn btn-ghost" style="background:transparent;color:#fff;border-color:rgba(255,255,255,.5)">Join the Portal</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- VISIT -->
+  <section id="visit" style="padding-top:1rem">
+    <div class="center" style="margin-bottom:2.4rem">
+      <span class="k">Visit Us</span>
+      <h2 class="sec-title">Find Our Church</h2>
+      <p class="sec-sub">We'd love to welcome you in person. Join our family for Sunday worship or any of our weekly gatherings.</p>
+    </div>
+    <div class="visit">
+      <div class="mapbox">
+        <iframe title="Map to Chosen People's Church, Challenge, Ibadan" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          src="https://maps.google.com/maps?q=19+Tomori+Avenue,+Elewura+Street,+Challenge,+Ibadan,+Nigeria&output=embed"></iframe>
+      </div>
+      <div class="vinfo">
+        <h3>Address</h3>
+        <div class="row">📍 19 Tomori Avenue, Elewura Street, Challenge, Ibadan, Nigeria</div>
+        <h3 style="margin-top:1rem">Service Times</h3>
+        <div class="row"><b>Sunday Worship</b> — 8:30 AM</div>
+        <div class="row"><b>Monday Prayer Tower</b> — 5:00 PM</div>
+        <div class="row"><b>Bible Study / Moment of Insight</b> — Wednesday 5:00 PM</div>
+        <h3 style="margin-top:1rem">Contact Us</h3>
+        <div class="row">📞 <a href="tel:+2348155969877">0815 596 9877</a> · <a href="https://wa.me/2348155969877" target="_blank" rel="noopener">WhatsApp</a></div>
+        <div class="row">📞 <a href="tel:+2348131191313">0813 119 1313</a> · <a href="https://wa.me/2348131191313" target="_blank" rel="noopener">WhatsApp</a></div>
+        <div class="row">✉️ <a href="mailto:info@chosenpeopleschurch.com">info@chosenpeopleschurch.com</a></div>
+        <p style="margin-top:1.2rem"><a class="btn btn-violet" href="https://maps.google.com/maps?q=19+Tomori+Avenue,+Elewura+Street,+Challenge,+Ibadan,+Nigeria" target="_blank" rel="noopener">Get Directions</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CPC MOMENTS -->
+  <section class="center" style="padding-top:1rem">
+    <span class="k">Life in Community</span>
+    <h2 class="sec-title">CPC Moments</h2>
+    <p class="sec-sub">A glimpse into the vibrant life of Chosen People's Church — where faith meets community.</p>
+    <div class="ggrid" id="moments-grid" style="margin-top:2rem">
+      <div class="live-note" style="grid-column:1/-1;margin-top:0"><b>Loading moments…</b></div>
+    </div>
+    <p style="margin-top:1.8rem"><a href="gallery.html" class="btn btn-violet">View Full Gallery</a></p>
+  </section>
+</div>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <div>
+      <div class="flogo"><img src="assets/logo.webp" alt="CPC logo"><b>Chosen People's Church</b></div>
+      <p>A Spirit-filled covenant community raised for reconciliation, restoration, and the advancement of God's Kingdom.</p>
+      <div class="social">
+        <a href="https://www.youtube.com/channel/UCHYZhmE0SYucxRaYa7GJmdg" target="_blank" rel="noopener" aria-label="YouTube">
+          <svg viewBox="0 0 24 24"><path d="M23 7.2s-.2-1.6-.9-2.3c-.9-.9-1.9-.9-2.3-1C16.6 3.5 12 3.5 12 3.5s-4.6 0-7.8.4c-.4.1-1.4.1-2.3 1-.7.7-.9 2.3-.9 2.3S.8 9.1.8 11v1.8c0 1.9.2 3.8.2 3.8s.2 1.6.9 2.3c.9.9 2 .9 2.5 1 1.8.2 7.6.4 7.6.4s4.6 0 7.8-.4c.4-.1 1.4-.1 2.3-1 .7-.7.9-2.3.9-2.3s.2-1.9.2-3.8V11c0-1.9-.2-3.8-.2-3.8zM9.7 14.9V8.7l6.1 3.1-6.1 3.1z"/></svg></a>
+        <a href="https://t.me/chosenpeopleschurchglobal" target="_blank" rel="noopener" aria-label="Telegram">
+          <svg viewBox="0 0 24 24"><path d="M21.9 4.6 19 19.3c-.2 1-.8 1.2-1.6.8l-4.5-3.3-2.2 2.1c-.2.2-.4.4-.9.4l.3-4.6L18.6 7c.4-.3-.1-.5-.6-.2L7.8 13.2l-4.4-1.4c-1-.3-1-1 .2-1.4l17.2-6.6c.8-.3 1.5.2 1.1 1.8z"/></svg></a>
+        <a href="https://wa.me/2348155969877" target="_blank" rel="noopener" aria-label="WhatsApp">
+          <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.5 15.3L2 22l4.9-1.4A10 10 0 1 0 12 2zm5.3 13.9c-.2.6-1.2 1.1-1.7 1.2-.4 0-.9.3-3.1-.7-2.6-1-4.3-3.7-4.4-3.9-.1-.2-1.1-1.4-1.1-2.7s.7-1.9 1-2.2c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.4l.9 2.1c.1.2.1.4 0 .6l-.4.6-.5.5c-.1.2-.3.3-.1.6.2.3.8 1.4 1.8 2.2 1.2 1.1 2.3 1.4 2.6 1.6.3.1.5.1.7-.1l1-1.1c.2-.3.4-.2.7-.1l2 .9c.3.2.5.3.6.4 0 .1 0 .6-.3 1z"/></svg></a>
+      </div>
+    </div>
+    <div>
+      <h4>Quick Links</h4>
+      <a href="index.html">Home</a>
+      <a href="sermons.html">Sermons</a>
+      <a href="events.html">Upcoming Events</a>
+      <a href="giving.html">Online Giving</a>
+      <a href="gallery.html">Photo Gallery</a>
+    </div>
+    <div>
+      <h4>Service Times</h4>
+      <p>Sunday Service — 8:30 AM</p>
+      <p>Monday Prayer Tower — 5:00 PM</p>
+      <p>Bible Study — Wednesday 5:00 PM</p>
+    </div>
+    <div>
+      <h4>Contact Us</h4>
+      <p>19 Tomori Avenue, Elewura Street, Challenge, Ibadan, Nigeria</p>
+      <a href="tel:+2348155969877">0815 596 9877</a>
+      <a href="tel:+2348131191313">0813 119 1313</a>
+      <a href="mailto:info@chosenpeopleschurch.com">info@chosenpeopleschurch.com</a>
+    </div>
+  </div>
+  <div class="copy">© 2026 Chosen People's Church. All rights reserved.</div>
+</footer>
+
+<a class="wafloat" href="https://wa.me/2348155969877" target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.5 15.3L2 22l4.9-1.4A10 10 0 1 0 12 2zm5.3 13.9c-.2.6-1.2 1.1-1.7 1.2-.4 0-.9.3-3.1-.7-2.6-1-4.3-3.7-4.4-3.9-.1-.2-1.1-1.4-1.1-2.7s.7-1.9 1-2.2c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.4l.9 2.1c.1.2.1.4 0 .6l-.4.6-.5.5c-.1.2-.3.3-.1.6.2.3.8 1.4 1.8 2.2 1.2 1.1 2.3 1.4 2.6 1.6.3.1.5.1.7-.1l1-1.1c.2-.3.4-.2.7-.1l2 .9c.3.2.5.3.6.4 0 .1 0 .6-.3 1z"/></svg>
+</a>
+<button class="totop" id="toTop" aria-label="Back to top">↑</button>
+
+<script src="assets/main.js" defer></script>
+</body>
+</html>

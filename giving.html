@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Give & Partner | Chosen People's Church, Ibadan</title>
+<meta name="description" content="Give your tithes, offerings, and seeds securely — bank transfer details and receipt confirmation for Chosen People's Church, Ibadan.">
+<link rel="canonical" href="https://www.chosenpeopleschurch.com/giving">
+<meta property="og:title" content="Give & Partner | Chosen People's Church">
+<meta property="og:description" content="Honour God with your substance — secure giving channels for CPC, Ibadan.">
+<meta property="og:type" content="website">
+<link rel="icon" type="image/webp" href="assets/logo.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-J151XXVG7D"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-J151XXVG7D');</script>
+</head>
+<body>
+
+<div class="abar" id="announcement-bar" style="display:none">
+  <div class="wrap">
+    <span>📣</span>
+    <span data-ab-text>Next gathering</span>
+    <a href="events.html">See details →</a>
+    <button class="close" id="abar-close" aria-label="Dismiss announcement">×</button>
+  </div>
+</div>
+
+<header>
+  <div class="wrap nav">
+    <a href="index.html" class="brand">
+      <img src="assets/logo.webp" alt="Chosen People's Church logo">
+      <span class="t"><b>Chosen People's Church</b><small>Centre for Reconciliation &amp; Restoration</small></span>
+    </a>
+    <nav class="menu" id="menu" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="sermons.html">Sermons</a>
+      <a href="events.html">Events</a>
+      <a href="giving.html" class="active" aria-current="page">Giving</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="https://portal.chosenpeopleschurch.com" target="_blank" rel="noopener">Member Portal</a>
+    </nav>
+    <a href="#gpay" class="btn btn-green">Give Online</a>
+    <button class="burger" id="burger" aria-label="Menu" aria-expanded="false">☰</button>
+  </div>
+</header>
+
+<main>
+<div class="page-hero">
+  <div class="wrap">
+    <div class="crumbs"><a href="index.html">Home</a> › Giving</div>
+    <h1>Give &amp; <em>Partner</em></h1>
+    <p>"Each of you should give what you have decided in your heart to give, not reluctantly or under compulsion, for God loves a cheerful giver." — 2 Corinthians 9:7</p>
+  </div>
+</div>
+
+<div class="wrap">
+  <section class="center">
+    <span class="k">Tithe Calculator</span>
+    <h2 class="sec-title">Know Your Tithe</h2>
+    <p class="sec-sub">Slide to your monthly income — a tithe is simply 10%.</p>
+
+    <div class="give-grid" style="text-align:left">
+      <!-- CALCULATOR + SECURE ONLINE -->
+      <div>
+        <div class="card" style="padding:2.2rem">
+          <label for="income-slider" style="font-weight:700;font-size:.9rem;display:flex;justify-content:space-between;align-items:baseline">
+            <span>Monthly income</span><span id="income-display" style="color:var(--violet)">₦150,000</span>
+          </label>
+          <input type="range" id="income-slider" min="5000" max="2000000" step="5000" value="150000" style="width:100%;accent-color:var(--green);margin:.8rem 0 .3rem">
+          <div class="range-row"><span>₦5,000</span><span>₦2,000,000</span></div>
+          <div class="calc-amt" id="tithe-display">₦15,000</div>
+          <div class="calc-sub">Your monthly tithe (10%)</div>
+
+          <div class="fundrow" role="group" aria-label="Choose a fund">
+            <button class="fund active" data-fund="General Fund" type="button">General Fund</button>
+            <button class="fund" data-fund="Missions" type="button">Missions</button>
+            <button class="fund" data-fund="Building Expansion" type="button">Building Expansion</button>
+            <button class="fund" data-fund="Youth Ministry" type="button">Youth Ministry</button>
+          </div>
+          <p class="calc-sub" style="margin:0">Choosing a fund pre-fills the receipt form below.</p>
+        </div>
+
+        <!-- SECURE ONLINE GIVING — gateway plugs in here.
+             The live site's raw card-number form (audit 🔴2) has been REMOVED on purpose:
+             real card details must never touch this website. When leadership approves a
+             processor (Paystack or Flutterwave recommended), their official embed/checkout
+             script drops in at the marker below — nothing else on this page changes. -->
+        <div class="gpay" id="gpay" style="margin-top:1.6rem">
+          <div class="lock">🔒 Secure Online Giving</div>
+          <h3 style="font-size:1.2rem;margin-bottom:.5rem">Card &amp; bank payments — coming soon</h3>
+          <p style="font-size:.92rem;color:var(--muted)">We're finalising a licensed payment gateway (Paystack / Flutterwave) so you can give instantly by card, transfer, or USSD. Until then, please use the bank details on the right — it's fast and free.</p>
+          <!-- GATEWAY-EMBED: insert Paystack/Flutterwave checkout script here -->
+          <button class="btn btn-green" id="btn-amount" type="button"
+            onclick="alert('Online card giving launches soon! Please use the bank transfer details beside this panel. God bless you 💜')">₦15,000.00</button>
+          <p class="calc-sub" style="margin-top:.8rem;margin-bottom:0">⬅ Amount follows the calculator above.</p>
+        </div>
+      </div>
+
+      <!-- BANK TRANSFER -->
+      <div>
+        <div class="bank">
+          <h3>🏦 Bank Transfer</h3>
+          <p style="color:#B9B1E8;font-size:.88rem;margin:.3rem 0 1rem">Works with any Nigerian bank app or USSD.</p>
+          <div class="brow"><span>Bank</span><b>First Bank of Nigeria</b></div>
+          <div class="brow"><span>Account Name</span><b>Chosen Peoples Pool Account</b></div>
+          <div class="brow"><span>Account Number</span><b>3133054315</b>
+            <button class="copyb" type="button" data-copy="3133054315">Copy</button></div>
+          <div class="brow"><span>Reference</span><b>Your name + fund (e.g. "Tola — Tithe")</b></div>
+          <p style="color:#B9B1E8;font-size:.8rem;margin-top:1.1rem">Account name is exactly as registered with the bank (no apostrophe) — this matches our records and is correct.</p>
+        </div>
+
+        <div class="card" style="margin-top:1.6rem;padding:1.6rem">
+          <h3 style="font-size:1.05rem;margin-bottom:.4rem">🤝 Prefer to give in person?</h3>
+          <p style="font-size:.92rem;color:var(--muted)">Offerings and seeds are also received during every service — Sundays 8:30 AM, Mondays &amp; Wednesdays 5:00 PM.</p>
+        </div>
+
+        <div class="card" style="margin-top:1.6rem;padding:1.6rem;background:#F2FCF6;border-color:#B6E7C8">
+          <h3 style="font-size:1.05rem;margin-bottom:.4rem">✅ Made a transfer?</h3>
+          <p style="font-size:.92rem;color:var(--muted)">Send your payment receipt with the form below so our accounts team can acknowledge your giving promptly.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RECEIPT CONFIRMATION — identical contract to receipt-submit.php on the live site -->
+  <section style="padding-top:1rem">
+    <div class="form">
+      <div class="ok" id="receipt-success">
+        <b>Receipt received — thank you! 🎉</b> Our accounts team will confirm and get back to you shortly.
+        <div style="margin-top:.7rem"><button class="btn btn-violet" id="receipt-again" type="button" style="padding:.5rem 1.2rem;font-size:.84rem">Send another receipt</button></div>
+      </div>
+
+      <h3>Confirm Your Giving</h3>
+      <p class="sub">Transferred to the church account? Attach your receipt and we'll acknowledge it. (Posts to the church's existing <code>receipt-submit.php</code> — nothing about this integration changed.)</p>
+
+      <form id="receipt-form">
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:0 1.2rem" class="form-2col">
+          <div class="field"><label for="donor_name">Full Name *</label>
+            <input type="text" id="donor_name" name="donor_name" required placeholder="e.g. Adaeze Okafor"></div>
+          <div class="field"><label for="donor_phone">Phone Number</label>
+            <input type="tel" id="donor_phone" name="donor_phone" placeholder="e.g. 0815 000 0000"></div>
+          <div class="field"><label for="donor_email">Email Address</label>
+            <input type="email" id="donor_email" name="donor_email" placeholder="you@example.com"></div>
+          <div class="field"><label for="amount_paid">Amount Paid (₦) *</label>
+            <input type="number" id="amount_paid" name="amount_paid" min="100" required placeholder="e.g. 15000"></div>
+          <div class="field"><label for="payment_date">Payment Date *</label>
+            <input type="date" id="payment_date" name="payment_date" required></div>
+          <div class="field"><label for="transaction_ref">Transaction Reference</label>
+            <input type="text" id="transaction_ref" name="transaction_ref" placeholder="From your bank app / receipt"></div>
+        </div>
+        <div class="field"><label for="designated_fund">Designated Fund *</label>
+          <select id="designated_fund" name="designated_fund" required>
+            <option value="General Fund">General Fund</option>
+            <option value="Missions">Missions</option>
+            <option value="Building Expansion">Building Expansion</option>
+            <option value="Youth Ministry">Youth Ministry</option>
+          </select></div>
+        <div class="field"><label for="description">Description</label>
+          <input type="text" id="description" name="description" placeholder="e.g. July tithe / Thanksgiving offering"></div>
+        <div class="field"><label for="message">Message (optional)</label>
+          <textarea id="message" name="message" placeholder="Anything you'd like the accounts team to know…"></textarea></div>
+
+        <div class="field">
+          <label>Attach Receipt (JPG, PNG or PDF · max 5MB) *</label>
+          <div class="dz" id="drop-zone">
+            <b>Click to choose</b> or drag &amp; drop your receipt here
+            <div id="file-name" style="margin-top:.5rem;font-size:.85rem">No file chosen</div>
+          </div>
+          <input type="file" id="receipt_file" name="receipt_file" accept=".jpg,.jpeg,.png,.pdf" required hidden>
+        </div>
+
+        <button class="btn btn-green" id="receipt-submit-btn" type="submit">✈ Send Receipt to Church</button>
+        <p class="note">🔒 Your details go straight to the church accounts team — never shared. Files are checked (JPG/PNG/PDF, max 5MB) before sending.</p>
+      </form>
+    </div>
+  </section>
+
+  <section style="padding-top:0">
+    <div class="cta">
+      <h2>"It is more blessed to give than to receive."</h2>
+      <p>Acts 20:35 — Thank you for partnering with what God is doing at CPC.</p>
+    </div>
+  </section>
+</div>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <div>
+      <div class="flogo"><img src="assets/logo.webp" alt="CPC logo"><b>Chosen People's Church</b></div>
+      <p>A Spirit-filled covenant community raised for reconciliation, restoration, and the advancement of God's Kingdom.</p>
+      <div class="social">
+        <a href="https://www.youtube.com/channel/UCHYZhmE0SYucxRaYa7GJmdg" target="_blank" rel="noopener" aria-label="YouTube">
+          <svg viewBox="0 0 24 24"><path d="M23 7.2s-.2-1.6-.9-2.3c-.9-.9-1.9-.9-2.3-1C16.6 3.5 12 3.5 12 3.5s-4.6 0-7.8.4c-.4.1-1.4.1-2.3 1-.7.7-.9 2.3-.9 2.3S.8 9.1.8 11v1.8c0 1.9.2 3.8.2 3.8s.2 1.6.9 2.3c.9.9 2 .9 2.5 1 1.8.2 7.6.4 7.6.4s4.6 0 7.8-.4c.4-.1 1.4-.1 2.3-1 .7-.7.9-2.3.9-2.3s.2-1.9.2-3.8V11c0-1.9-.2-3.8-.2-3.8zM9.7 14.9V8.7l6.1 3.1-6.1 3.1z"/></svg></a>
+        <a href="https://t.me/chosenpeopleschurchglobal" target="_blank" rel="noopener" aria-label="Telegram">
+          <svg viewBox="0 0 24 24"><path d="M21.9 4.6 19 19.3c-.2 1-.8 1.2-1.6.8l-4.5-3.3-2.2 2.1c-.2.2-.4.4-.9.4l.3-4.6L18.6 7c.4-.3-.1-.5-.6-.2L7.8 13.2l-4.4-1.4c-1-.3-1-1 .2-1.4l17.2-6.6c.8-.3 1.5.2 1.1 1.8z"/></svg></a>
+        <a href="https://wa.me/2348155969877" target="_blank" rel="noopener" aria-label="WhatsApp">
+          <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.5 15.3L2 22l4.9-1.4A10 10 0 1 0 12 2zm5.3 13.9c-.2.6-1.2 1.1-1.7 1.2-.4 0-.9.3-3.1-.7-2.6-1-4.3-3.7-4.4-3.9-.1-.2-1.1-1.4-1.1-2.7s.7-1.9 1-2.2c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.4l.9 2.1c.1.2.1.4 0 .6l-.4.6-.5.5c-.1.2-.3.3-.1.6.2.3.8 1.4 1.8 2.2 1.2 1.1 2.3 1.4 2.6 1.6.3.1.5.1.7-.1l1-1.1c.2-.3.4-.2.7-.1l2 .9c.3.2.5.3.6.4 0 .1 0 .6-.3 1z"/></svg></a>
+      </div>
+    </div>
+    <div>
+      <h4>Quick Links</h4>
+      <a href="index.html">Home</a>
+      <a href="sermons.html">Sermons</a>
+      <a href="events.html">Upcoming Events</a>
+      <a href="giving.html">Online Giving</a>
+      <a href="gallery.html">Photo Gallery</a>
+    </div>
+    <div>
+      <h4>Service Times</h4>
+      <p>Sunday Service — 8:30 AM</p>
+      <p>Monday Prayer Tower — 5:00 PM</p>
+      <p>Bible Study — Wednesday 5:00 PM</p>
+    </div>
+    <div>
+      <h4>Contact Us</h4>
+      <p>19 Tomori Avenue, Elewura Street, Challenge, Ibadan, Nigeria</p>
+      <a href="tel:+2348155969877">0815 596 9877</a>
+      <a href="tel:+2348131191313">0813 119 1313</a>
+      <a href="mailto:info@chosenpeopleschurch.com">info@chosenpeopleschurch.com</a>
+    </div>
+  </div>
+  <div class="copy">© 2026 Chosen People's Church. All rights reserved.</div>
+</footer>
+
+<a class="wafloat" href="https://wa.me/2348155969877" target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.5 15.3L2 22l4.9-1.4A10 10 0 1 0 12 2zm5.3 13.9c-.2.6-1.2 1.1-1.7 1.2-.4 0-.9.3-3.1-.7-2.6-1-4.3-3.7-4.4-3.9-.1-.2-1.1-1.4-1.1-2.7s.7-1.9 1-2.2c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.4l.9 2.1c.1.2.1.4 0 .6l-.4.6-.5.5c-.1.2-.3.3-.1.6.2.3.8 1.4 1.8 2.2 1.2 1.1 2.3 1.4 2.6 1.6.3.1.5.1.7-.1l1-1.1c.2-.3.4-.2.7-.1l2 .9c.3.2.5.3.6.4 0 .1 0 .6-.3 1z"/></svg>
+</a>
+<button class="totop" id="toTop" aria-label="Back to top">↑</button>
+
+<script src="assets/main.js" defer></script>
+</body>
+</html>
