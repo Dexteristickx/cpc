@@ -1,0 +1,62 @@
+---
+# ============================================================================
+#  CHOSEN PEOPLE'S CHURCH — cPanel Git deployment recipe
+#  Place this file at the ROOT of your GitHub repo (next to index.html).
+#  cPanel ▸ Git Version Control ▸ "Deploy HEAD Commit" executes these tasks
+#  from inside the checked-out repo.
+#
+#  ⚠️  SAFETY BY DESIGN (protects audit finding 🔴1-class accidents):
+#    1. Everything is copied file-by-file with `cp` (merge + overwrite).
+#       It NEVER deletes anything on the server — so these LIVE-ONLY files
+#       stay untouched even though they are not in the repo:
+#            api/                  (YouTube/Google API, sermons, events, gallery)
+#            receipt-submit.php    (receipt upload backend)
+#            telegram-webhook.php  (Telegram bot endpoint)
+#            portal/ or portal.* subdomain files
+#    2. NEVER use `rsync --delete` or `rm -rf` here — it would wipe them.
+#    3. Never commit the /api backend code or API keys to GitHub.
+# ============================================================================
+deployment:
+  tasks:
+
+    # ── 1️⃣  EDIT THIS: your real cPanel username (check cPanel home sidebar) ──
+    - export DEPLOYPATH=/home/CPANEL_USERNAME/public_html/
+
+    # ── make sure the target exists (harmless if it already does) ──
+    - /bin/mkdir -p $DEPLOYPATH
+
+    # ── 2️⃣  Front-end pages ──
+    #    (If your repo keeps the site inside a subfolder, e.g. `cpc/`,
+    #     prefix each source like: /bin/cp -f cpc/index.html $DEPLOYPATH)
+    - /bin/cp -f index.html    $DEPLOYPATH
+    - /bin/cp -f sermons.html  $DEPLOYPATH
+    - /bin/cp -f events.html   $DEPLOYPATH
+    - /bin/cp -f giving.html   $DEPLOYPATH
+    - /bin/cp -f gallery.html  $DEPLOYPATH
+    - /bin/cp -f 404.html      $DEPLOYPATH
+
+    # ── 3️⃣  Site config files ──
+    - /bin/cp -f robots.txt    $DEPLOYPATH
+    - /bin/cp -f sitemap.xml   $DEPLOYPATH
+    - /bin/cp -f .htaccess     $DEPLOYPATH
+
+    # ── 4️⃣  Assets: css, js, images ──
+    - /bin/cp -Rf assets       $DEPLOYPATH
+
+    # ── 5️⃣  Fix permissions (644 files / 755 dirs) ──
+    - /bin/chmod 644 $DEPLOYPATH/*.html $DEPLOYPATH/.htaccess $DEPLOYPATH/robots.txt $DEPLOYPATH/sitemap.xml
+    - /usr/bin/find $DEPLOYPATH/assets -type f -exec /bin/chmod 644 {} +
+    - /usr/bin/find $DEPLOYPATH/assets -type d -exec /bin/chmod 755 {} +
+
+    # ── INTENTIONALLY NOT DEPLOYED ──
+    #   • README.md / OPTIMIZATION.md / vercel.json / .cpanel.yml
+    #       → repo-internal docs & hosting configs, not for public_html
+    #   • api/, receipt-submit.php, telegram-webhook.php
+    #       → live backend, must remain exactly as-is on the server
+    #
+    # ── STAGING OPTION ──
+    #   First-time safety run: deploy to a test folder instead:
+    #       - export DEPLOYPATH=/home/CPANEL_USERNAME/public_html/v2/
+    #   Review at https://www.chosenpeopleschurch.com/v2/, then switch
+    #   DEPLOYPATH back to public_html/ for go-live. (README §3 has the
+    #   full backup → stage → review → switch → rollback checklist.)
